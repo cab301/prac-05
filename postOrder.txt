@@ -1,0 +1,35 @@
+postOrder{
+	postOrder(leftChild)
+	postOrder(rightChild)
+	order.Add(currentNode)
+}
+
+postOrder(A){
+	postOrder(A.leftChild = B){
+		postOrder(B.leftChild = D){
+			postOrder(D.leftChild = null) // Halt
+			postOrder(D.rightChild = null) // Halt
+			order.Add(D)
+		}
+		postOrder(B.rightChild = E){
+			postOrder(E.leftChild = G){
+				postOrder(G.leftChild = null) // Halt
+				postOrder(G.rightChild = null) // Halt
+				order.Add(G)
+			}
+			postOrder(E.rightChild = null) // Halt
+			order.Add(E)
+		}
+		order.Add(B)
+	}
+	postOrder(A.rightChild = C) {
+		postOrder(C.leftChild = F){
+			postOrder(F.leftChild = null) // Halt
+			postOrder(F.rightChild = null) // Halt
+			order.Add(F)
+		}
+		postOrder(C.rightChild = null) // Halt
+		order.Add(C)
+	}
+	order.Add(A)
+}

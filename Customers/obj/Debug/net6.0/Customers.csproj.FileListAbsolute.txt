@@ -1,0 +1,15 @@
+C:\Users\MELTUser01\Documents\prac-05\Customers\bin\Debug\net6.0\Customers.exe
+C:\Users\MELTUser01\Documents\prac-05\Customers\bin\Debug\net6.0\Customers.deps.json
+C:\Users\MELTUser01\Documents\prac-05\Customers\bin\Debug\net6.0\Customers.runtimeconfig.json
+C:\Users\MELTUser01\Documents\prac-05\Customers\bin\Debug\net6.0\Customers.dll
+C:\Users\MELTUser01\Documents\prac-05\Customers\bin\Debug\net6.0\Customers.pdb
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.csproj.AssemblyReference.cache
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.AssemblyInfoInputs.cache
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.AssemblyInfo.cs
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.csproj.CoreCompileInputs.cache
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.dll
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\refint\Customers.dll
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.pdb
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\Customers.genruntimeconfig.cache
+C:\Users\MELTUser01\Documents\prac-05\Customers\obj\Debug\net6.0\ref\Customers.dll
