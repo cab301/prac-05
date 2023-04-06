@@ -1,0 +1,111 @@
+PreOrder(root):
+	visit root.item
+	PreOrder(root.left)
+	PreOrder(root.right)
+
+PreOrder(A):
+	visit A.item
+	PreOrder(A.left => B):
+		visit B.item
+		PreOrder(B.left => D):
+			visit D.item
+			PreOrder(D.left => null): stop
+			PreOrder(D.right => null): stop
+		PreOrder(B.right => E):
+			visit E.item
+			PreOrder(E.left => G):
+				visit G.item
+				PreOrder(G.left => null): stop 
+				PreOrder(G.right => null): stop
+			PreOrder(E.right => null): stop
+	PreOrder(A.right => C):
+		visit C.item
+		PreOrder(C.left => F):
+			visit F.item
+			PreOrder(F.left => null): stop
+			PreOrder(F.right => null): stop
+		PreOrder(C.right => null): stop
+
+
+InOrder(root):
+	InOrder(root.left)
+	visit root.item
+	InOrder(root.right)
+
+InOrder(A):
+	InOrder(A.left => B):
+		InOrder(B.left => D):
+			InOrder(D.left => null): stop
+			visit D.item
+			InOrder(D.right => null): stop
+		visit B.item
+		InOrder(B.right => E):
+			InOrder(E.left => G):
+				InOrder(G.left => null): stop
+				visit G.item
+				InOrder(G.right => null): stop
+			visit E.item
+			InOrder(E.right => null): stop
+	visited A.item
+	InOrder(A.right => C):
+		InOrder(C.left => F):
+			InOrder(F.left => null): stop
+			visit F.item
+			InOrder(F.right => null): stop
+		visit C.item
+		InOrder(C.right => null): stop
+
+D -> B -> G -> E -> A -> F -> C
+
+PostOrder(root):
+	PostOrder(root.left)
+	PostOrder(root.right)
+	visit root.item
+
+PostOrder(A):
+	PostOrder(A.left => B):
+		PostOrder(B.left => D):
+			PostOrder(D.left => null): stop
+			PostOrder(D.right => null): stop
+			visit D.item
+		PostOrder(B.right => E):
+			PostOrder(E.left => G):
+				PostOrder(G.left => null): stop
+				PostOrder(G.right => null): stop
+				visit G.item
+			PostOrder(E.right => null): stop
+			visit E.item
+		visit B.item
+	PostOrder(A.right => C):
+		PostOrder(C.left => F):
+			PostOrder(F.left => null): stop
+			PostOrder(F.right => null): stop
+			visit F.item
+		PostOrder(C.right => null): stop
+		visit C.item
+	visit A.item
+
+D -> G -> E -> B -> F -> C -> A
+
+PostOrder(50):
+	PostOrder(50.left)
+		PostOrder(45.left)
+			PostOrder(30.left)
+			PostOrder(30.right)
+			visit 30.item
+		PostOrder(45.right)
+			PostOrder(46.left)
+			PostOrder(46.right)
+			visit 46.item
+		visit 45.item
+	PostOrder(50.right)
+		PostOrder(55.left)
+			PostOrder(52.left)
+				PostOrder(51.left)
+				PostOrder(51.right)
+				visit 51.item
+			PostOrder(52.right)
+			visit 52.item
+		PostOrder(55.right)
+		visit root.item
+	visit 50.item
